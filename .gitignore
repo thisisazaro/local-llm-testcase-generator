@@ -1,0 +1,32 @@
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+
+# Secrets / local env
+.env
+.env.local
+
+# Runtime data
+data/raw/
+data/chroma/
+docs_for_test/
+
+# Logs / temp
+*.log
+tmp/
+temp/

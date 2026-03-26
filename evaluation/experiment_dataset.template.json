@@ -1,0 +1,26 @@
+[
+  {
+    "scenario_id": "auth_basic",
+    "file_id": "REPLACE_WITH_FILE_ID_FROM_UPLOAD",
+    "prompt": "Сформируй тест-кейсы для базовой авторизации, включая проверки ошибок валидации и граничные случаи",
+    "top_k": 10,
+    "max_cases": 18,
+    "include_negative": true,
+    "include_boundary": true,
+    "reference_test_cases": [
+      {
+        "title": "Успешный вход валидного пользователя",
+        "preconditions": "Пользователь зарегистрирован и активирован",
+        "steps": [
+          "Открыть форму логина",
+          "Ввести корректный логин и пароль",
+          "Нажать кнопку входа"
+        ],
+        "expected_result": "Система авторизует пользователя и открывает личный кабинет",
+        "scenario_type": "positive",
+        "source_ref": "page_1_offset_0",
+        "priority": "high"
+      }
+    ]
+  }
+]
